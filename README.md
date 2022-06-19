@@ -1,11 +1,6 @@
 <h1 align="center"> <a href='http://ten-juice.surge.sh/'>
-  LabeX 
+  Blog com Jsonplaceholder
  </h1>
-<div align="center"> 
-  
-  ### Blog com Jsonplaceholder
-  
-</div>
   
 # Getting Started with Create React App
 
