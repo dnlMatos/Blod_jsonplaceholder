@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useContext } from "react";
 import { Context } from "../../globalContext/context";
-import { addPost, delPost, findPost } from "../../requests/requests";
+import { delPost } from "../../requests/requests";
 import { AllCards, Card, Spinner } from "./style";
 import { BeatLoader } from "react-spinners";
 import { ToastContainer, toast } from "react-toastify";
@@ -34,11 +34,6 @@ export default function Posts() {
     });
   };
 
-  const buscaPost = async (title) =>{
-    const resp = await findPost(title)
-    console.log(resp);
-    // setLocalPostsList(resp)
-  }
   return (
     <AllCards className="mt-3">
       {loading ? (
