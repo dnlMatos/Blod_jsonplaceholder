@@ -1,13 +1,8 @@
-import React, { useState, useContext, useEffect } from "react";
-import { Context } from "../../globalContext/context";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import {
-  goToFindPost,
-  goToHome,
-  goToNewPost,
-} from "../../controllers/coodinator";
+import { goToHome, goToNewPost } from "../../controllers/coodinator";
 import { NavElements, Cabecalho, Menu } from "./style";
-import { addPost, delPost, findPost } from "../../requests/requests";
+import { findPost } from "../../requests/requests";
 
 export default function Header() {
   const [search, setSearch] = useState("");
@@ -20,7 +15,7 @@ export default function Header() {
 
   const filtraPost = (Id) => {
     findPost(Id);
-    history.push(`/posts/userId:${Id}`)
+    history.push(`/posts/userId:${Id}`);
   };
 
   return (
@@ -68,15 +63,17 @@ export default function Header() {
               <ul className="d-flex justify-content-evenly container-fluid navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item" onClick={() => goToHome(history)}>
                   <a
-                    className="nav-link active text-primary"
+                    className="d-flex nav-link active text-primary "
                     aria-current="page"
                     href=""
                   >
+                    <span class="material-symbols-outlined me-1">home</span>
                     Home
                   </a>
                 </li>
                 <li className="nav-item" onClick={() => goToNewPost(history)}>
-                  <a className="nav-link text-primary" href="">
+                  <a className="d-flex nav-link text-primary" href="">
+                    <span class="material-symbols-outlined me-1">add_box</span>
                     Criar Post
                   </a>
                 </li>
