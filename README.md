@@ -52,7 +52,7 @@ You may also see any lint errors in the console.
 
 https://user-images.githubusercontent.com/60492862/174486214-709fc0c1-2a51-4e4f-ae97-5f047715182a.mp4
   
-por: Danilo Matos
-Background: <a href='https://www.freepik.com/photos/desktop'>Desktop photo created by pvproductions - www.freepik.com</a>
+por: Danilo Matos </br>
+<a href='https://www.freepik.com/photos/desktop'>Desktop photo created by pvproductions - www.freepik.com</a>
 
 
